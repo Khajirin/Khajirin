@@ -1,3 +1,134 @@
-<div class="hero-photo">
-  <img src="image_d25005.jpg" alt="Foto Profil Khajirin" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-</div>
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio — Nama Anda</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="#beranda">Nama Anda</a>
+      <button class="nav-toggle" aria-controls="nav" aria-expanded="false" id="navToggle">☰</button>
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Halo, saya Nama Anda</h1>
+          <p>Saya seorang mahasiswa di Program Studi Sistem Informasi. Saya tertarik pada pengembangan web, analisis data, dan solusi berbasis teknologi untuk bisnis.</p>
+          <p><a class="btn" href="#kontak">Hubungi saya</a></p>
+        </div>
+        <div class="hero-photo" aria-hidden="true">
+          <!-- Ganti dengan foto Anda jika mau -->
+          <div class="photo-placeholder">Foto</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="section">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <p>Saya sedang menempuh pendidikan di Program Studi Sistem Informasi. Selama studi saya mempelajari pemrograman, basis data, analisis sistem, dan manajemen proyek TI. Saya suka membuat aplikasi web sederhana, mengolah data, dan bekerja dalam tim.</p>
+
+        <div class="info-grid">
+          <div class="card">
+            <h3>Pendidikan</h3>
+            <p>Mahasiswa Sistem Informasi — Universitas Anda (2023 — sekarang)</p>
+          </div>
+          <div class="card">
+            <h3>Keahlian</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Basis data (MySQL / PostgreSQL)</li>
+              <li>Analisis sistem & dokumentasi</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Bahasa</h3>
+            <p>Indonesia (aktif), Inggris (menengah)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pengalaman" class="section alt">
+      <div class="container">
+        <h2>Pengalaman</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>Asisten Lab TI</h4>
+            <span class="meta">2025 — sekarang</span>
+            <p>Membantu praktikum pemrograman dan database, serta memelihara alat dan modul praktikum.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Proyek: Sistem Informasi Inventaris (Proyek Kuliah)</h4>
+            <span class="meta">2024</span>
+            <p>Membangun aplikasi inventaris sederhana menggunakan PHP/Node.js dan MySQL; bertanggung jawab pada desain database dan frontend.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Magang Singkat (contoh)</h4>
+            <span class="meta">2023</span>
+            <p>Pengenalan proses bisnis perusahaan dan dokumentasi kebutuhan untuk fitur sistem internal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Ingin berkolaborasi atau menanyakan sesuatu? Isi formulir di bawah atau kirim email langsung.</p>
+
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate>
+            <label for="name">Nama</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Kirim Pesan</button>
+            <p id="formMsg" class="form-msg" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info">
+            <h3>Atau hubungi langsung</h3>
+            <p>Email: <a href="mailto:email@domain.com">email@domain.com</a></p>
+            <p>Telepon: <a href="tel:+628123456789">+62 812-3456-789</a></p>
+            <p>Lokasi: Kota, Negara</p>
+            <div class="social">
+              <a href="#" aria-label="LinkedIn">LinkedIn</a> · <a href="#" aria-label="GitHub">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Nama Anda — Mahasiswa Sistem Informasi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
